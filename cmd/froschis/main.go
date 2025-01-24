@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
-	deck := game.NewDeck()
-	fmt.Println(deck)
+	game := game.NewGame(2)
+
+	fmt.Println(game.Print())
+	game.Play()
 }
